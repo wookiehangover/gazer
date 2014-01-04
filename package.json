@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "description": "Watch some files, do a thing",
   "main": "index.js",
-  "bin": "bin/cmd.js",
+  "bin": {
+    "gazer": "bin/cmd.js"
+  },
   "scripts": {
     "test": "mocha test --timeout 5000"
   },
-  "author": "",
+  "author": "wookiehangover",
   "license": "BSD-2-Clause",
   "dependencies": {
     "gaze": "~0.4.3",
@@ -17,5 +19,17 @@
     "chai": "~1.8.1",
     "mocha": "~1.16.2",
     "less": "~1.6.0"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wookiehangover/gazer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wookiehangover/gazer/issues"
+  },
+  "homepage": "https://github.com/wookiehangover/gazer"
 }
