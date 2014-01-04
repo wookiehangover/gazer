@@ -16,7 +16,7 @@ $ npm install -g gazer
 ## Usage
 
 ```shell
-$ gazer --patern "readme.md" echo "blorp"
+$ gazer --pattern "readme.md" echo "blorp"
 
 [readme.md changes]
 

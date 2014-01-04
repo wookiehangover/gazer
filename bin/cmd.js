@@ -2,7 +2,7 @@
 var gazer = require('../');
 
 var argv = require('optimist')
-  .usage('Usage: gazer --pattern "public/less/**/*.less" <your command>')
+  .usage('Usage: gazer --pattern "**/*.js" <your command>')
   .demand('pattern')
   .argv;
 
