@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var exec = require('child_process').exec;
 var gaze = require('gaze');
 var debounce = require('lodash.debounce');
