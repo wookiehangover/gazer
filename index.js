@@ -25,7 +25,7 @@ module.exports = function(pattern, cmd){
     console.log('Watching "'+ pattern +'" : ' +
                 fileCount +' file'+ (fileCount > 1 ? 's' : ''));
 
-    this.on('all', runner);
+    this.on('all', debounce(runner, 100));
   });
 };
 
