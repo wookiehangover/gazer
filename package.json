@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/wookiehangover/gazer/issues"
   },
-  "homepage": "https://github.com/wookiehangover/gazer"
+  "homepage": "https://github.com/wookiehangover/gazer",
+  "keywords": [
+    "watch",
+    "build"
+  ]
 }
