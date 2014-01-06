@@ -23,4 +23,27 @@ $ gazer --pattern "readme.md" echo "blorp"
 > "blorp"
 ```
 
+### Arbitrary watch tasks with npm run
+
+If you haven't read substack's [post describing lightweight build steps
+with `npm run`](http://substack.net/task_automation_with_npm_run), I'll
+give you a moment to get up to speed.
+
+Here's how you might use `gazer` to run a build task every time a file
+changes:
+
+```javascript
+{
+  "scripts": {
+    "build-less": "lessc public/less/main.less public/css/main.css",
+    "watch-less": "gazer -p 'public/less/**/*.less' npm run build-less"
+  }
+}
+```
+
+And then start the watcher:
+
+```shell
+$ npm run watch-less
+```
 
