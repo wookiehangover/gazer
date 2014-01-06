@@ -7,7 +7,7 @@ module](https://github.com/shama/gaze) that performs an arbitrary
 command when files change. Like
 [watchify](https://github.com/substack/watchify), but for everything.
 
-### Installation
+## Installation
 
 ```shell
 $ npm install -g gazer
@@ -46,4 +46,16 @@ And then start the watcher:
 ```shell
 $ npm run watch-less
 ```
+
+### Double dash
+
+If you need to pass a -p argument to the command you're running, use
+`--` to separate the option arguments from the positional arguments:
+
+```shell
+$ gazer -p readme.md -- echo -p
+```
+
+This feature is provided [for free](http://c2.com/cgi/wiki?ForFree)
+by [optimist](https://github.com/substack/node-optimist).
 
