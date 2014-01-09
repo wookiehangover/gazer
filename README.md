@@ -9,6 +9,20 @@ command when files change. Like
 
 ## Installation
 
+This works best as a `devDependency` in the project you plan to use it
+in:
+
+```shell
+$ npm install --save-dev gazer
+```
+
+You can easily invoke `gazer` with `npm run` via npm scripts that you
+set up in your package.json. See the usage example below for more
+details.
+
+If you want to use this everywhere, across multipe projects, you can install it
+globally, too:
+
 ```shell
 $ npm install -g gazer
 ```
@@ -18,11 +32,12 @@ $ npm install -g gazer
 ```shell
 $ gazer --pattern "readme.md" echo "blorp"
 
+
 [readme.md changes]
 
 > "blorp"
 ```
-
+`
 ### Arbitrary watch tasks with npm run
 
 If you haven't read substack's [post describing lightweight build steps
