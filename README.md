@@ -32,7 +32,6 @@ $ npm install -g gazer
 ```shell
 $ gazer --pattern "readme.md" echo "blorp"
 
-
 [readme.md changes]
 
 > "blorp"
