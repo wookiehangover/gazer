@@ -37,7 +37,7 @@ $ gazer --pattern "readme.md" echo "blorp"
 
 > "blorp"
 ```
-`
+
 ### Arbitrary watch tasks with npm run
 
 If you haven't read substack's [post describing lightweight build steps
