@@ -12,9 +12,9 @@
   "author": "wookiehangover",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "gaze": "~0.4.3",
-    "lodash.debounce": "~2.4.1",
-    "optimist": "~0.6.0"
+    "gaze": "^1.1.1",
+    "lodash.debounce": "^4.0.8",
+    "optimist": "^0.6.1"
   },
   "devDependencies": {
     "chai": "~1.8.1",
