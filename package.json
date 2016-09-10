@@ -1,6 +1,6 @@
 {
   "name": "gazer",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Watch some files, do a thing",
   "main": "index.js",
   "bin": {
@@ -14,7 +14,7 @@
   "dependencies": {
     "gaze": "^1.1.1",
     "lodash.debounce": "^4.0.8",
-    "optimist": "^0.6.1"
+    "yargs": "^5.0.0"
   },
   "devDependencies": {
     "chai": "~1.8.1",

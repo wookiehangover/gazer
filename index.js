@@ -1,8 +1,8 @@
 var exec = require('child_process').exec;
 var gaze = require('gaze');
-var debounce = require('lodash.debounce');
 
 module.exports = function(pattern, cmd){
+
   function runner(event, filepath){
     console.log('Running: '+ cmd);
     exec(cmd, function(err, stdout, stderr){
@@ -19,12 +19,8 @@ module.exports = function(pattern, cmd){
       throw new Error(err);
     }
 
-    var fileCount = Object.keys(this.watched()).length;
+    console.log('Watching "'+ pattern + '"');
 
-    console.log('Watching "'+ pattern +'" : ' +
-                fileCount +' file'+ (fileCount > 1 ? 's' : ''));
-
-    this.on('all', debounce(runner, 100));
+    this.on('changed', runner);
   });
 };
-

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var gazer = require('../');
 
-var argv = require('optimist')
+var argv = require('yargs')
   .usage('Usage: gazer -p "**/*.js" <your command>')
   .demand('p')
   .alias('p', 'pattern')
